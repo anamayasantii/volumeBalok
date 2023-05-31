@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Volume Balok</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Menghitung Volume Balok</h2>
+
+    <div style="text-align: center;">
+        <label for="panjang">Panjang</label>
+        <input type="number" name="variabel" id="panjang">
+        <label for="number">Lebar</label>
+        <input type="number" name="variabel" id="lebar">
+        <label for="number">Tinggi</label>
+        <input type="number" name="variabel" id="tinggi">
+        <button onclick="htVolume()">Hitung</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function htVolume(){
+            var panjang = document.getElementById("panjang").value
+            var lebar = document.getElementById("lebar").value
+            var tinggi = document.getElementById("tinggi").value
+            var volume = panjang * lebar *tinggi 
+            document.getElementById("demo").innerText = "Volume Balok adalah "+volume+ "cm^3"
+        }
+    </script>
+</body>
+</html>
